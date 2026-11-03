@@ -379,6 +379,37 @@
         </div>
       </div>
     </div>
+<!-- MODAL DE KIMUN -->
+    <div
+      id="kimun-modal"
+      class="modal-overlay"
+      onclick="if (event.target === this) this.style.display = 'none';"
+    >
+      <div class="modal-content" style="max-width: 500px; text-align: center; border-color: #e8b923;">
+        <button
+          class="btn-close"
+          onclick="document.getElementById('kimun-modal').style.display = 'none'"
+        >
+          Cerrar ✖
+        </button>
+
+        <!-- La carita de Kimun -->
+        <div style="font-size: 70px; margin-bottom: 10px;">🦉</div>
+
+        <h2 style="color: var(--accent); margin-top: 0;">Kimun, la lechuza sabia</h2>
+
+        <!-- El globo de diálogo -->
+        <div style="background: var(--bg-body); padding: 20px; border-radius: 16px; border: 2px solid var(--panel-border); position: relative; margin-top: 20px;">
+          <p style="font-size: 18px; color: var(--text-main); font-weight: 700; margin: 0;">
+            "¡Mari mari! (¡Hola!) Soy Kimun 🦉, la lechuza sabia. Juntos vamos a aprender a cuidar la naturaleza, proteger a los animales y vivir una gran Aventura Agroecológica."
+          </p>
+        </div>
+
+        <button class="btn-start" style="margin-top: 25px; font-size: 18px; padding: 10px 30px;" onclick="document.getElementById('kimun-modal').style.display = 'none'">
+          ¡Vamos a jugar! 🚀
+        </button>
+      </div>
+    </div>
 
     <!-- MODAL TIENDA DE SEMILLAS -->
     <div
@@ -408,7 +439,16 @@
     >
       ⚙️
     </button>
-
+<!-- Botón de Kimun (Lechuza) -->
+    <button
+      id="btn-kimun"
+      class="floating-kimun"
+      onclick="document.getElementById('kimun-modal').style.display = 'flex'"
+      title="Hablar con Kimun"
+      aria-label="Hablar con Kimun"
+    >
+      🦉
+    </button>
     <div class="view-tabs">
       <button
         class="view-tab active"
